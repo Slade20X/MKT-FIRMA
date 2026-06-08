@@ -36,7 +36,7 @@ const cases = [
 ];
 
 export default function CaseStudies() {
-  // ✅ ZMIENIONE: HTMLDivElement zamiast HTMLElement
+  // ✅ Poprawione typy: HTMLDivElement, a nie HTMLElement
   const containerRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const [totalWidth, setTotalWidth] = useState(0);
@@ -60,7 +60,7 @@ export default function CaseStudies() {
 
     const ctx = gsap.context(() => {
       const scrollTrigger = ScrollTrigger.create({
-        trigger: containerRef.current,
+        trigger: containerRef.current!,
         start: 'top top',
         end: `+=${totalWidth}`,
         pin: true,
@@ -102,7 +102,6 @@ export default function CaseStudies() {
         </h2>
       </div>
 
-      {/* ✅ containerRef działa teraz z <div> */}
       <div ref={containerRef} className="relative h-screen overflow-hidden">
         <div
           ref={trackRef}

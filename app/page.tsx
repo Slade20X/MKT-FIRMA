@@ -2,7 +2,7 @@ import Hero from '@/components/Hero';
 import LogoBar from '@/components/LogoBar';
 import Services from '@/components/Services';
 import Results from '@/components/Results';
-import CaseStudies from '@/components/CaseStudies';
+// import CaseStudies from '@/components/CaseStudies'; //
 import WhyUs from '@/components/WhyUs';
 import Testimonials from '@/components/Testimonials';
 import Process from '@/components/Process';
@@ -16,7 +16,7 @@ export default function Home() {
       <LogoBar />
       <Services />
       <Results />
-      <CaseStudies />
+      {/* <CaseStudies /> */}
       <WhyUs />
       <Testimonials />
       <Process />

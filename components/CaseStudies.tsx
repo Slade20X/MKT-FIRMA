@@ -36,7 +36,8 @@ const cases = [
 ];
 
 export default function CaseStudies() {
-  const containerRef = useRef<HTMLElement>(null);
+  // ✅ ZMIENIONE: HTMLDivElement zamiast HTMLElement
+  const containerRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const [totalWidth, setTotalWidth] = useState(0);
 
@@ -101,13 +102,14 @@ export default function CaseStudies() {
         </h2>
       </div>
 
+      {/* ✅ containerRef działa teraz z <div> */}
       <div ref={containerRef} className="relative h-screen overflow-hidden">
         <div
           ref={trackRef}
           className="flex gap-8 md:gap-12 h-full items-center px-6 md:px-12 lg:px-20 absolute left-0 top-0"
           style={{ width: 'max-content' }}
         >
-          {cases.map((item, idx) => (
+          {cases.map((item) => (
             <div
               key={item.id}
               className="w-[90vw] md:w-[70vw] lg:w-[60vw] xl:w-[50vw] flex-shrink-0 group comet-card"

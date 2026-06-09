@@ -61,7 +61,7 @@ export default function CookieConsent() {
                   <p className="text-sm text-darkLight/70 leading-relaxed">
                     Ta strona używa plików cookie, aby zapewnić najlepsze doświadczenia podczas przeglądania,
                     analizować ruch na stronie i personalizować treści. Klikając "Akceptuję", zgadzasz się
-                    na użycie wszystkich plików cookie.
+                    na użycie wszystkich plików cookie. W każdej chwili możesz wycofać zgode na używanie plików cookie. Ustawienia → Prywatność i bezpieczeństwo → Pliki cookie
                   </p>
                   <div className="flex flex-wrap gap-3 mt-4">
                     <a href="/polityka-prywatnosci" className="text-xs text-accent hover:underline">

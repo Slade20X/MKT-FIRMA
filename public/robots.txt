@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://mktlab.pl
+
+# Sitemaps
+Sitemap: https://mktlab.pl/sitemap.xml

@@ -91,7 +91,7 @@ export default function Hero() {
               className="mt-6 text-lg md:text-xl text-darkLight/80 leading-relaxed max-w-lg"
             >
               Pomagamy ambitnym markom zwiększać sprzedaż dzięki strategii,
-              kreacji i skutecznym kampaniom. Działamy w Gdańsku i zdalnie w całej Polsce.
+              kreacji i skutecznym kampaniom.
             </p>
             <div
               ref={buttonsRef}

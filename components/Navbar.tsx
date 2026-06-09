@@ -4,12 +4,14 @@ import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import MagneticButton from './ui/MagneticButton';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
   { name: 'Usługi', href: '#services' },
-  { name: 'Realizacje', href: '#case-studies' },
   { name: 'O nas', href: '#why-us' },
+  { name: 'Proces', href: '#process' },
+  { name: 'Cennik', href: '#contact' },
   { name: 'Kontakt', href: '#contact' },
 ];
 
@@ -40,9 +42,18 @@ export default function Navbar() {
         }`}
       >
         <div className="container-premium flex items-center justify-between">
-          <a href="#home" className="relative z-10">
-            <span className="text-2xl font-bold tracking-tighter text-dark">MKT LAB</span>
+          {/* LOGO - zamiast tekstu */}
+          <a href="#home" className="relative z-10 block">
+            <Image
+              src="/logo.png"
+              alt="MKT Lab – Agencja Marketingu i Wzrostu"
+              width={120}
+              height={40}
+              className="h-12 md:h-14 w-auto object-contain"
+              priority
+            />
           </a>
+
           <div className="hidden md:flex items-center gap-12">
             {navLinks.map((link) => (
               <a
@@ -54,6 +65,7 @@ export default function Navbar() {
               </a>
             ))}
           </div>
+
           <div className="hidden md:block">
             <MagneticButton>
               <button
@@ -64,6 +76,7 @@ export default function Navbar() {
               </button>
             </MagneticButton>
           </div>
+
           <button onClick={() => setMobileMenuOpen(true)} className="md:hidden">
             <Menu className="w-6 h-6 text-dark" />
           </button>
@@ -84,6 +97,16 @@ export default function Navbar() {
               </button>
             </div>
             <div className="flex flex-col items-center justify-center h-full gap-8">
+              {/* Logo w menu mobilnym */}
+              <div className="mb-4">
+                <Image
+                  src="/logo.png"
+                  alt="MKT Lab"
+                  width={140}
+                  height={46}
+                  className="h-10 w-auto object-contain"
+                />
+              </div>
               {navLinks.map((link, i) => (
                 <motion.a
                   key={link.name}

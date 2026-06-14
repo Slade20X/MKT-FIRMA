@@ -86,12 +86,14 @@ export default function Testimonials() {
             <button
               onClick={() => setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length)}
               className="w-10 h-10 rounded-full border border-tertiary flex items-center justify-center hover:bg-accent hover:text-white transition-all"
+              aria-label="Poprzednia opinia"  // <-- DODAJ
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={() => setCurrent((prev) => (prev + 1) % testimonials.length)}
               className="w-10 h-10 rounded-full border border-tertiary flex items-center justify-center hover:bg-accent hover:text-white transition-all"
+              aria-label="Następna opinia"  // <-- DODAJ
             >
               <ChevronRight className="w-5 h-5" />
             </button>

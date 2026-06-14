@@ -55,6 +55,7 @@ export default function Footer() {
           <button
             onClick={scrollToTop}
             className="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center hover:bg-accent hover:text-white transition-all group"
+            aria-label="Przewiń do góry strony"
           >
             <ArrowUp className="w-4 h-4" />
           </button>

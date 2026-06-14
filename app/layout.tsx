@@ -4,7 +4,7 @@ import ClientLayout from '@/components/ClientLayout';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'MKT | Agencja Marketingu',
+  title: 'MKT | Agencja Marketingowa',
   description: 'MKT Lab to agencja marketingowa, która łączy strategię, kreatywność i dane. Działamy w Gdańsku i zdalnie w całej Polsce. Zwiększamy sprzedaż, ROAS i rozpoznawalność marki.',
   keywords: 'agencja marketingowa Gdańsk, marketing internetowy, pozycjonowanie SEO, performance marketing, social media, branding, strategia marketingowa, wzrost sprzedaży',
   authors: [{ name: 'MKT Lab' }],

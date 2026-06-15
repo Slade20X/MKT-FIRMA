@@ -137,6 +137,7 @@ export default function Hero() {
                 fill
                 className="object-cover"
                 priority
+                fetchPriority="high"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-accent/5 to-transparent" />

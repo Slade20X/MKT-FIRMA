@@ -88,7 +88,7 @@ export default function Hero() {
             </h1>
             <p
               ref={subtitleRef}
-              className="mt-6 text-lg md:text-xl text-darkLight/80 leading-relaxed max-w-lg"
+              className="mt-6 text-lg md:text-xl text-darkLight leading-relaxed max-w-lg"
             >
               Pomagamy ambitnym markom zwiększać sprzedaż dzięki strategii,
               kreacji i skutecznym kampaniom.

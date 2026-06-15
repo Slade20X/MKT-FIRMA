@@ -71,7 +71,7 @@ export default function WhyUs() {
                   <pillar.icon className={`w-6 h-6 text-accent`} />
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-dark">{pillar.title}</h3>
-                <p className="text-darkLight/70 text-sm">{pillar.description}</p>
+                <p className="text-darkLight text-sm">{pillar.description}</p>
               </motion.div>
             ))}
           </div>

@@ -62,7 +62,7 @@ export default function Testimonials() {
               className="bg-secondary rounded-3xl p-8 md:p-12 comet-card"
             >
               <Quote className="w-12 h-12 text-accent/20 mb-6" />
-              <p className="text-xl md:text-2xl text-darkLight leading-relaxed">
+              <p className="text-xl md:text-2xl text-dark leading-relaxed">
                 "{testimonials[current].content}"
               </p>
               <div className="flex items-center gap-4 mt-8">

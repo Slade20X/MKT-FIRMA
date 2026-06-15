@@ -91,7 +91,7 @@ function ServiceCard({ service, index }: { service: any; index: number }) {
         <ArrowUpRight className="w-6 h-6 text-darkLight/30 group-hover:text-accent group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
       </div>
       <h3 className="text-2xl font-bold mt-8 mb-3 text-dark">{service.title}</h3>
-      <p className="text-darkLight/70 leading-relaxed mb-6">{service.description}</p>
+      <p className="text-darkLight leading-relaxed mb-6">{service.description}</p>
       <div className="pt-6 border-t border-tertiary">
         <div className="text-3xl font-bold text-accent">{service.metric}</div>
         <div className="text-sm text-darkLight/50 mt-1">{service.metricLabel}</div>

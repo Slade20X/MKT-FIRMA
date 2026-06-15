@@ -23,20 +23,20 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-dark mb-4">Firma</h4>
             <ul className="space-y-2">
-              <li><a href="#home" className="text-darkLight/60 hover:text-accent transition-colors">Home</a></li>
-              <li><a href="#services" className="text-darkLight/60 hover:text-accent transition-colors">Usługi</a></li>
-              <li><a href="#case-studies" className="text-darkLight/60 hover:text-accent transition-colors">Case Studies</a></li>
-              <li><a href="#why-us" className="text-darkLight/60 hover:text-accent transition-colors">O Nas</a></li>
+              <li><a href="#home" className="text-darkLight/80 hover:text-accent transition-colors">Home</a></li>
+              <li><a href="#services" className="text-darkLight/80 hover:text-accent transition-colors">Usługi</a></li>
+              <li><a href="#case-studies" className="text-darkLight/80 hover:text-accent transition-colors">Case Studies</a></li>
+              <li><a href="#why-us" className="text-darkLight/80 hover:text-accent transition-colors">O Nas</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-bold text-dark mb-4">Usługi</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-darkLight/60 hover:text-accent transition-colors">Performance Marketing</a></li>
-              <li><a href="#" className="text-darkLight/60 hover:text-accent transition-colors">SEO</a></li>
-              <li><a href="#" className="text-darkLight/60 hover:text-accent transition-colors">Social Media</a></li>
-              <li><a href="#" className="text-darkLight/60 hover:text-accent transition-colors">Branding</a></li>
+              <li><a href="#" className="text-darkLight/80 hover:text-accent transition-colors">Performance Marketing</a></li>
+              <li><a href="#" className="text-darkLight/80 hover:text-accent transition-colors">SEO</a></li>
+              <li><a href="#" className="text-darkLight/80 hover:text-accent transition-colors">Social Media</a></li>
+              <li><a href="#" className="text-darkLight/80 hover:text-accent transition-colors">Branding</a></li>
             </ul>
           </div>
 

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import MagneticButton from './ui/MagneticButton';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Facebook } from 'lucide-react';
 import ContactModal from './ContactModal';
 
 export default function CTA() {
@@ -10,6 +10,9 @@ export default function CTA() {
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
+
+  // 🔁 ZMIEŃ NA SWÓJ PRAWDZIWY ADRES FACEBOOK
+  const facebookUrl = 'https://www.facebook.com/profile.php?id=61590845034777';
 
   return (
     <>
@@ -22,19 +25,37 @@ export default function CTA() {
                 Gotowy na wzrost?
               </h2>
               <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-10">
-                Umów się na bezpłatną konsultację i dowiedz się, jak możemy
-                przyspieszyć Twój biznes.
+                Umów się na bezpłatną konsultację lub sprawdź nas w social mediach.
               </p>
-              <MagneticButton>
-                <button
-                  onClick={openModal}
-                  className="group bg-white text-accent px-10 py-4 rounded-full text-lg font-semibold flex items-center gap-2 mx-auto transition-all duration-300 hover:shadow-xl"
-                  aria-label="Otwórz formularz kontaktowy"
+              
+              {/* Przyciski w jednym rzędzie */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <MagneticButton>
+                  <button
+                    onClick={openModal}
+                    className="group bg-white text-accent px-8 py-4 rounded-full text-lg font-semibold flex items-center gap-2 transition-all duration-300 hover:shadow-xl hover:scale-105"
+                  >
+                    Porozmawiajmy
+                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </MagneticButton>
+
+                {/* Przycisk Facebook */}
+                <a
+                  href={facebookUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-3 bg-[#1877F2] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:scale-105 hover:bg-[#1877F2]/90"
                 >
-                  Porozmawiajmy
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </button>
-              </MagneticButton>
+                  <Facebook className="w-5 h-5" />
+                  Obserwuj nas na Facebooku
+                </a>
+              </div>
+
+              {/* Dodatkowa informacja */}
+              <p className="text-white/50 text-sm mt-6">
+                Odpowiadamy w ciągu 24h • Znajdziesz nas też na Instagramie i LinkedIn
+              </p>
             </div>
           </div>
         </div>

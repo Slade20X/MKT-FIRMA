@@ -20,11 +20,11 @@ export default function NotFound() {
 
         {/* Główny komunikat */}
         <h1 className="text-3xl md:text-5xl font-bold text-dark mb-4">
-          Ups! Strona nie została odnaleziona
+          Ups! Strona tymczasowo niedostępna
         </h1>
         
         <p className="text-darkLight/70 text-lg md:text-xl mb-6 max-w-lg mx-auto">
-          Przepraszamy, ale strona, którą próbujesz odwiedzić, nie istnieje lub została przeniesiona.
+          Przepraszamy, ale strona, którą próbujesz odwiedzić, jest tymczasowo niedostępna.
         </p>
 
         {/* Przyciski akcji */}

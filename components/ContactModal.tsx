@@ -66,6 +66,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 <button
                   onClick={onClose}
                   className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center hover:bg-tertiary transition-colors"
+                  aria-label="Zamknij okno kontaktowe"
                 >
                   <X className="w-4 h-4 text-dark" />
                 </button>

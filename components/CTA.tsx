@@ -29,6 +29,7 @@ export default function CTA() {
                 <button
                   onClick={openModal}
                   className="group bg-white text-accent px-10 py-4 rounded-full text-lg font-semibold flex items-center gap-2 mx-auto transition-all duration-300 hover:shadow-xl"
+                  aria-label="Otwórz formularz kontaktowy"
                 >
                   Porozmawiajmy
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

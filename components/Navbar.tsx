@@ -77,7 +77,7 @@ export default function Navbar() {
             </MagneticButton>
           </div>
 
-          <button onClick={() => setMobileMenuOpen(true)} className="md:hidden">
+          <button onClick={() => setMobileMenuOpen(true)} className="md:hidden" aria-label="Otwórz menu">
             <Menu className="w-6 h-6 text-dark" />
           </button>
         </div>
@@ -92,7 +92,7 @@ export default function Navbar() {
             className="fixed inset-0 z-50 bg-white"
           >
             <div className="flex justify-end p-6">
-              <button onClick={() => setMobileMenuOpen(false)}>
+              <button onClick={() => setMobileMenuOpen(false)} aria-label="Zamknij menu">
                 <X className="w-6 h-6" />
               </button>
             </div>

@@ -11,7 +11,7 @@ const navLinks = [
   { name: 'Usługi', href: '#services' },
   { name: 'O nas', href: '#why-us' },
   { name: 'Proces', href: '#process' },
-  { name: 'Cennik', href: '#contact' },
+  { name: 'Kalkulator', href: '#contact' },
   { name: 'Kontakt', href: '#contact' },
 ];
 

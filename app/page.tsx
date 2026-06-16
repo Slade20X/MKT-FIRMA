@@ -6,6 +6,7 @@ import Results from '@/components/Results';
 import WhyUs from '@/components/WhyUs';
 import Testimonials from '@/components/Testimonials';
 import Process from '@/components/Process';
+import ROICalculator from '@/components/ROICalculator';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
 
@@ -20,6 +21,7 @@ export default function Home() {
       <WhyUs />
       <Testimonials />
       <Process />
+      <ROICalculator />
       <CTA />
       <Footer />
     </>

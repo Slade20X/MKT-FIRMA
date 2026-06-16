@@ -10,7 +10,7 @@ const testimonials = [
     id: 1,
     name: 'Klient',
     role: 'CMO',
-    content: 'MKT Lab zmienił nasze podejście do marketingu. Wyniki mówią same za siebie – ROI wzrósł o 312% w ciągu 6 miesięcy.',
+    content: 'MKT Lab zmienił nasze podejście do marketingu. Wyniki mówią same za siebie - ROI wzrósł o 312% w ciągu 6 miesięcy.',
     image: 'https://images.unsplash.com/photo-1676195470090-7c90bf539b3b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
@@ -24,7 +24,7 @@ const testimonials = [
     id: 3,
     name: 'Klient',
     role: 'Head of Brand',
-    content: 'Branding, który zbudowali wspólnie z nami, jest spójny, skalowalny i przede wszystkim – skuteczny.',
+    content: 'Branding, który zbudowali wspólnie z nami, jest spójny, skalowalny i przede wszystkim - skuteczny.',
     image: 'https://images.unsplash.com/photo-1676195470090-7c90bf539b3b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
 ];

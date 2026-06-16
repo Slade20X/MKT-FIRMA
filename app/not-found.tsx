@@ -65,7 +65,7 @@ export default function NotFound() {
 
         {/* Subtelna stopka */}
         <p className="text-darkLight/40 text-sm mt-8">
-          MKT Lab © {new Date().getFullYear()} – Agencja Marketingu i Wzrostu
+          MKT Lab © {new Date().getFullYear()} - Agencja Marketingu i Wzrostu
         </p>
       </div>
     </div>

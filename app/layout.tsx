@@ -4,8 +4,8 @@ import ClientLayout from '@/components/ClientLayout';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'MKT Lab – Agencja Marketinga, Strony WWW, Kampanie reklamowe',
-  description: 'MKT Lab – agencja marketingu w Gdańsku. Zwiększamy sprzedaż i ROAS. Działamy zdalnie w całej Polsce.',
+  title: 'MKT Lab - Agencja Marketinga, Strony WWW, Kampanie reklamowe',
+  description: 'MKT Lab - agencja marketingu w Gdańsku. Zwiększamy sprzedaż i ROAS. Działamy zdalnie w całej Polsce.',
   keywords: 'agencja marketingowa Gdańsk, marketing internetowy, pozycjonowanie SEO, performance marketing, social media, branding, strategia marketingowa, wzrost sprzedaży',
   authors: [{ name: 'MKT Lab' }],
   creator: 'MKT Lab',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     canonical: 'https://mktlab.pl',
   },
   openGraph: {
-    title: 'MKT Lab – Agencja Marketinga, Strony WWW, Kampanie reklamowe',
+    title: 'MKT Lab - Agencja Marketinga, Strony WWW, Kampanie reklamowe',
     description: 'Marketing, który generuje realny wzrost. Działamy w Gdańsku i online w całej Polsce.',
     url: 'https://mktlab.pl',
     siteName: 'MKT Lab',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         url: 'https://i.imgur.com/3p3FcG4.png',
         width: 1200,
         height: 630,
-        alt: 'MKT Lab – nowoczesna agencja marketingowa',
+        alt: 'MKT Lab - nowoczesna agencja marketingowa',
       },
     ],
     locale: 'pl_PL',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MKT Lab – Agencja Marketinga, Strony WWW, Kampanie reklamowe',
+    title: 'MKT Lab - Agencja Marketinga, Strony WWW, Kampanie reklamowe',
     description: 'Zwiększamy sprzedaż dzięki strategii, kreatywności i danym.',
     images: ['https://i.imgur.com/3p3FcG4.png'],
   },

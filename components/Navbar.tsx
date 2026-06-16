@@ -46,7 +46,7 @@ export default function Navbar() {
           <a href="#home" className="relative z-10 block">
             <Image
               src="/logo.png"
-              alt="MKT Lab – Agencja Marketingu i Wzrostu"
+              alt="MKT Lab - Agencja Marketingu i Wzrostu"
               width={120}
               height={40}
               className="h-12 md:h-14 w-auto object-contain"

@@ -17,7 +17,7 @@ export default function Footer() {
     <footer className="bg-secondary pt-20 pb-8">
       <div className="container-premium">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
-          {/* Kolumna 1 – Logo, opis i social media */}
+          {/* Kolumna 1 - Logo, opis i social media */}
           <div className="lg:col-span-2">
             <span className="text-2xl font-bold tracking-tighter text-dark">MKT LAB</span>        
             <ul className="space-y-2">
@@ -26,7 +26,7 @@ export default function Footer() {
               <li className="text-darkLight/60 text-sm">REGON:</li>
             </ul>
             
-            {/* Social Media – Facebook i Instagram z opisem */}
+            {/* Social Media - Facebook i Instagram z opisem */}
             <div className="mt-6">
               <p className="text-sm font-medium text-darkLight/70 mb-3">Znajdź nas w social media:</p>
               <div className="flex flex-wrap gap-3">
@@ -54,7 +54,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Kolumna 2 – Firma */}
+          {/* Kolumna 2 - Firma */}
           <div>
             <h4 className="font-bold text-dark mb-4">Firma</h4>
             <ul className="space-y-2">
@@ -67,7 +67,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Kolumna 3 – Usługi */}
+          {/* Kolumna 3 - Usługi */}
           <div>
             <h4 className="font-bold text-dark mb-4">Usługi</h4>
             <ul className="space-y-2">
@@ -78,7 +78,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Kolumna 4 – Kontakt */}
+          {/* Kolumna 4 - Kontakt */}
           <div>
             <h4 className="font-bold text-dark mb-4">Kontakt</h4>
             <ul className="space-y-2">
@@ -89,7 +89,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Dolna stopka – copyright i przycisk do góry */}
+        {/* Dolna stopka - copyright i przycisk do góry */}
         <div className="border-t border-tertiary mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-darkLight/40 text-sm">
             © {new Date().getFullYear()} MKT Lab. Wszystkie prawa zastrzeżone.

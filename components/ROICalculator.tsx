@@ -1,9 +1,8 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
-import { TrendingUp, Zap, Target, ArrowRight, Calculator, Percent, DollarSign, PieChart } from 'lucide-react';
+import { Calculator, DollarSign, Percent, PieChart, ArrowRight } from 'lucide-react';
 
 interface ROIResult {
   monthlyRevenue: number;
@@ -17,13 +16,10 @@ export default function ROICalculator() {
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: '-100px' });
   
-  // Stan dla suwaków
   const [monthlyBudget, setMonthlyBudget] = useState(5000);
   const [expectedROI, setExpectedROI] = useState(320);
   const [campaignDuration, setCampaignDuration] = useState(6);
-  const [isVisible, setIsVisible] = useState(false);
 
-  // Obliczenia
   const calculateROI = (): ROIResult => {
     const monthlyRevenue = (monthlyBudget * expectedROI) / 100;
     const yearlyRevenue = monthlyRevenue * campaignDuration;
@@ -42,7 +38,6 @@ export default function ROICalculator() {
 
   const results = calculateROI();
 
-  // Formatowanie kwot
   const formatCurrency = (value: number) => {
     return new Intl.NumberFormat('pl-PL', {
       style: 'currency',
@@ -52,10 +47,10 @@ export default function ROICalculator() {
     }).format(value);
   };
 
-  // Procent do szerokości paska
-  const getBarWidth = (value: number, max: number = 1000) => {
-    return Math.min((value / max) * 100, 100);
-  };
+  // Obliczanie procentu dla każdego suwaka
+  const getBudgetPercent = () => ((monthlyBudget - 1000) / (50000 - 1000)) * 100;
+  const getROIPercent = () => ((expectedROI - 100) / (800 - 100)) * 100;
+  const getDurationPercent = () => ((campaignDuration - 1) / (24 - 1)) * 100;
 
   return (
     <section id="kalkulator" ref={sectionRef} className="py-24 md:py-32 bg-gradient-to-b from-white to-secondary">
@@ -79,7 +74,7 @@ export default function ROICalculator() {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          {/* LEWA STRONA – Suwaki */}
+          {/* LEWA STRONA - Suwaki */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -98,18 +93,20 @@ export default function ROICalculator() {
                     {formatCurrency(monthlyBudget)}
                   </span>
                 </div>
-                <input
-                  type="range"
-                  min="1000"
-                  max="50000"
-                  step="500"
-                  value={monthlyBudget}
-                  onChange={(e) => setMonthlyBudget(Number(e.target.value))}
-                  className="w-full h-2 bg-secondary rounded-lg appearance-none cursor-pointer accent-accent"
-                  style={{
-                    background: `linear-gradient(to right, #0F172A 0%, #0F172A ${(monthlyBudget / 50000) * 100}%, #E5E7EB ${(monthlyBudget / 50000) * 100}%, #E5E7EB 100%)`,
-                  }}
-                />
+                <div className="relative">
+                  <input
+                    type="range"
+                    min="1000"
+                    max="50000"
+                    step="500"
+                    value={monthlyBudget}
+                    onChange={(e) => setMonthlyBudget(Number(e.target.value))}
+                    className="w-full h-2 rounded-lg appearance-none cursor-pointer accent-accent"
+                    style={{
+                      background: `linear-gradient(to right, #0F172A 0%, #0F172A ${getBudgetPercent()}%, #E5E7EB ${getBudgetPercent()}%, #E5E7EB 100%)`,
+                    }}
+                  />
+                </div>
                 <div className="flex justify-between text-xs text-darkLight/40 mt-1">
                   <span>1 000 zł</span>
                   <span>50 000 zł</span>
@@ -127,18 +124,20 @@ export default function ROICalculator() {
                     +{expectedROI}%
                   </span>
                 </div>
-                <input
-                  type="range"
-                  min="100"
-                  max="800"
-                  step="10"
-                  value={expectedROI}
-                  onChange={(e) => setExpectedROI(Number(e.target.value))}
-                  className="w-full h-2 bg-secondary rounded-lg appearance-none cursor-pointer accent-accent"
-                  style={{
-                    background: `linear-gradient(to right, #0F172A 0%, #0F172A ${(expectedROI / 800) * 100}%, #E5E7EB ${(expectedROI / 800) * 100}%, #E5E7EB 100%)`,
-                  }}
-                />
+                <div className="relative">
+                  <input
+                    type="range"
+                    min="100"
+                    max="800"
+                    step="10"
+                    value={expectedROI}
+                    onChange={(e) => setExpectedROI(Number(e.target.value))}
+                    className="w-full h-2 rounded-lg appearance-none cursor-pointer accent-accent"
+                    style={{
+                      background: `linear-gradient(to right, #0F172A 0%, #0F172A ${getROIPercent()}%, #E5E7EB ${getROIPercent()}%, #E5E7EB 100%)`,
+                    }}
+                  />
+                </div>
                 <div className="flex justify-between text-xs text-darkLight/40 mt-1">
                   <span>100%</span>
                   <span>800%</span>
@@ -156,25 +155,27 @@ export default function ROICalculator() {
                     {campaignDuration} mies.
                   </span>
                 </div>
-                <input
-                  type="range"
-                  min="1"
-                  max="24"
-                  step="1"
-                  value={campaignDuration}
-                  onChange={(e) => setCampaignDuration(Number(e.target.value))}
-                  className="w-full h-2 bg-secondary rounded-lg appearance-none cursor-pointer accent-accent"
-                  style={{
-                    background: `linear-gradient(to right, #0F172A 0%, #0F172A ${(campaignDuration / 24) * 100}%, #E5E7EB ${(campaignDuration / 24) * 100}%, #E5E7EB 100%)`,
-                  }}
-                />
+                <div className="relative">
+                  <input
+                    type="range"
+                    min="1"
+                    max="24"
+                    step="1"
+                    value={campaignDuration}
+                    onChange={(e) => setCampaignDuration(Number(e.target.value))}
+                    className="w-full h-2 rounded-lg appearance-none cursor-pointer accent-accent"
+                    style={{
+                      background: `linear-gradient(to right, #0F172A 0%, #0F172A ${getDurationPercent()}%, #E5E7EB ${getDurationPercent()}%, #E5E7EB 100%)`,
+                    }}
+                  />
+                </div>
                 <div className="flex justify-between text-xs text-darkLight/40 mt-1">
                   <span>1 miesiąc</span>
                   <span>24 miesiące</span>
                 </div>
               </div>
 
-              {/* Podsumowanie – małe */}
+              {/* Podsumowanie */}
               <div className="bg-secondary/50 rounded-xl p-4 mt-4">
                 <p className="text-sm text-darkLight/60">
                   * Kalkulacja oparta na średnim ROAS naszych klientów. Wyniki mogą się różnić w zależności od branży.
@@ -183,7 +184,7 @@ export default function ROICalculator() {
             </div>
           </motion.div>
 
-          {/* PRAWA STRONA – Wyniki */}
+          {/* PRAWA STRONA - Wyniki */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}

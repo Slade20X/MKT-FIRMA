@@ -17,7 +17,7 @@ const botKnowledge: { keywords: string[]; response: string }[] = [
   // === POWITANIA ===
   {
     keywords: ['cześć', 'hej', 'witaj', 'siema', 'dzień dobry', 'dobry wieczór', 'elo', 'hello', 'hi', 'czesc', 'witam'],
-    response: 'Cześć! 😊 Miło Cię widzieć! Jestem MKT Bot – asystentem agencji MKT Lab. Jak mogę Ci pomóc? Możesz zapytać o nasze usługi, ceny, proces współpracy, a nawet o porady marketingowe!'
+    response: 'Cześć! 😊 Miło Cię widzieć! Jestem MKT Bot - asystentem agencji MKT Lab. Jak mogę Ci pomóc? Możesz zapytać o nasze usługi, ceny, proces współpracy, a nawet o porady marketingowe!'
   },
 
   // === CHCĘ ZACZĄĆ / NOWY KLIENT ===
@@ -35,13 +35,13 @@ const botKnowledge: { keywords: string[]; response: string }[] = [
   // === CENY I PAKIETY ===
   {
     keywords: ['cena', 'koszt', 'ile', 'wycena', 'pakiet', 'subskrypcja', 'płatność', 'opłata', 'abonament', 'cennik', 'koszty', 'ile kosztuje'],
-    response: '📊 Oto nasze pakiety marketingowe:\n\n🟢 START (3 900 zł/mies.)\n• Audyt marketingowy\n• Strategia na 3 miesiące\n• 1 kanał (Social/SEO/PPC)\n• Raporty miesięczne\n\n🟡 GROWTH (7 900 zł/mies.) – NAJPOPULARNIEJSZY!\n• Wszystko ze Start\n• 3 kanały marketingowe\n• Content marketing\n• Monitoring konkurencji\n\n🔴 PRO (14 900 zł/mies.)\n• Wszystko z Growth\n• Wszystkie kanały\n• Dedykowany account manager\n• 24/7 wsparcie\n\n👑 ENTERPRISE – wycena indywidualna\n\nKliknij "Wybierz pakiet" w sekcji subskrypcji na stronie!'
+    response: '📊 Oto nasze pakiety marketingowe:\n\n🟢 START (3 900 zł/mies.)\n• Audyt marketingowy\n• Strategia na 3 miesiące\n• 1 kanał (Social/SEO/PPC)\n• Raporty miesięczne\n\n🟡 GROWTH (7 900 zł/mies.) - NAJPOPULARNIEJSZY!\n• Wszystko ze Start\n• 3 kanały marketingowe\n• Content marketing\n• Monitoring konkurencji\n\n🔴 PRO (14 900 zł/mies.)\n• Wszystko z Growth\n• Wszystkie kanały\n• Dedykowany account manager\n• 24/7 wsparcie\n\n👑 ENTERPRISE - wycena indywidualna\n\nKliknij "Wybierz pakiet" w sekcji subskrypcji na stronie!'
   },
 
   // === USŁUGI SZCZEGÓŁOWO ===
   {
     keywords: ['usługa', 'usługi', 'oferta', 'co robicie', 'czym się zajmujecie', 'działalność', 'co oferujecie'],
-    response: '🏢 MKT Lab oferuje kompleksowe usługi marketingowe:\n\n🔍 SEO – pozycjonowanie i optymalizacja stron\n📱 Social Media – Facebook, Instagram, LinkedIn\n🚀 Performance Marketing – Google Ads, Facebook Ads\n🎨 Branding – budowanie silnych marek\n📊 Analityka – raporty i optymalizacja\n\nPomagamy firmom zwiększać sprzedaż, ROAS i rozpoznawalność! Który obszar Cię interesuje?'
+    response: '🏢 MKT Lab oferuje kompleksowe usługi marketingowe:\n\n🔍 SEO - pozycjonowanie i optymalizacja stron\n📱 Social Media - Facebook, Instagram, LinkedIn\n🚀 Performance Marketing - Google Ads, Facebook Ads\n🎨 Branding - budowanie silnych marek\n📊 Analityka - raporty i optymalizacja\n\nPomagamy firmom zwiększać sprzedaż, ROAS i rozpoznawalność! Który obszar Cię interesuje?'
   },
 
   // === SEO ===
@@ -71,7 +71,7 @@ const botKnowledge: { keywords: string[]; response: string }[] = [
   // === KONTAKT ===
   {
     keywords: ['kontakt', 'telefon', 'email', 'gdzie', 'biuro', 'adres', 'lokalizacja', 'znaleźć', 'dojazd', 'mapa', 'numer', 'komórka'],
-    response: '📞 Dane kontaktowe MKT Lab:\n\n📧 mktlab.biuro@gmail.com\n📱 +48 883 758 310\n📍 Gdańsk, Śródmieście\n🌍 Działamy zdalnie w całej Polsce!\n\nMożesz też kliknąć "Porozmawiajmy" na stronie – odpowiadamy w 24h!'
+    response: '📞 Dane kontaktowe MKT Lab:\n\n📧 mktlab.biuro@gmail.com\n📱 +48 883 758 310\n📍 Gdańsk, Śródmieście\n🌍 Działamy zdalnie w całej Polsce!\n\nMożesz też kliknąć "Porozmawiajmy" na stronie - odpowiadamy w 24h!'
   },
 
   // === GDZIE JESTEŚCIE ===
@@ -83,13 +83,13 @@ const botKnowledge: { keywords: string[]; response: string }[] = [
   // === PROCES WSPÓŁPRACY ===
   {
     keywords: ['proces', 'współpraca', 'działanie', 'jak pracujemy', 'etapy', 'procedura', 'kroki', 'jak wygląda'],
-    response: '📋 Nasz proces współpracy to 4 etapy:\n\n1️⃣ AUDYT – analiza rynku, konkurencji i potencjału\n2️⃣ STRATEGIA – mapa drogowa oparta na danych\n3️⃣ WDROŻENIE – realizacja kampanii z optymalizacją\n4️⃣ SKALOWANIE – ekspansja na kolejne kanały\n\nKażdy etap jest transparentny i oparty na danych! 💪'
+    response: '📋 Nasz proces współpracy to 4 etapy:\n\n1️⃣ AUDYT - analiza rynku, konkurencji i potencjału\n2️⃣ STRATEGIA - mapa drogowa oparta na danych\n3️⃣ WDROŻENIE - realizacja kampanii z optymalizacją\n4️⃣ SKALOWANIE - ekspansja na kolejne kanały\n\nKażdy etap jest transparentny i oparty na danych! 💪'
   },
 
   // === CZAS REALIZACJI ===
   {
     keywords: ['czas', 'ile trwa', 'szybko', 'termin', 'realizacja', 'kiedy', 'długo', 'jak długo'],
-    response: '⏱️ Ramy czasowe naszej współpracy:\n\n• Pierwsze efekty – 2-4 tygodnie\n• Pełna optymalizacja – 3 miesiące\n• Strategia długoterminowa – 6-12 miesięcy\n\nKażdy projekt jest inny – dostosowujemy tempo do Twoich potrzeb! 🚀'
+    response: '⏱️ Ramy czasowe naszej współpracy:\n\n• Pierwsze efekty - 2-4 tygodnie\n• Pełna optymalizacja - 3 miesiące\n• Strategia długoterminowa - 6-12 miesięcy\n\nKażdy projekt jest inny - dostosowujemy tempo do Twoich potrzeb! 🚀'
   },
 
   // === DOŚWIADCZENIE ===
@@ -101,13 +101,13 @@ const botKnowledge: { keywords: string[]; response: string }[] = [
   // === OPINIE ===
   {
     keywords: ['opinie', 'recenzje', 'co mówią', 'feedback', 'klienci o nas', 'mówią o was'],
-    response: '⭐ Co mówią nasi klienci:\n\n"Profesjonalizm na najwyższym poziomie. Zespół MKT Lab działa jak przedłużenie naszego działu growth." – Marcin, CEO FinScale\n\n"Branding, który zbudowali, jest spójny, skalowalny i skuteczny." – Katarzyna, Head of Brand NexGen\n\n"ROI wzrósł o 312% w 6 miesięcy!" – Anna, CMO TechStyle\n\nChcesz dołączyć do nich? Czekamy na Ciebie! 😊'
+    response: '⭐ Co mówią nasi klienci:\n\n"Profesjonalizm na najwyższym poziomie. Zespół MKT Lab działa jak przedłużenie naszego działu growth." - Marcin, CEO FinScale\n\n"Branding, który zbudowali, jest spójny, skalowalny i skuteczny." - Katarzyna, Head of Brand NexGen\n\n"ROI wzrósł o 312% w 6 miesięcy!" - Anna, CMO TechStyle\n\nChcesz dołączyć do nich? Czekamy na Ciebie! 😊'
   },
 
   // === UMOWA I WYPOWIEDZENIE ===
   {
     keywords: ['umowa', 'wypowiedzenie', 'zrezygnować', 'elastyczność', 'warunki', 'zobowiązanie', 'kontrakt', 'rozwiązanie'],
-    response: '📄 Nasze umowy są przyjazne i elastyczne:\n\n✅ Miesięczny okres wypowiedzenia\n✅ Możliwość rezygnacji bez dodatkowych kosztów\n✅ Transparentne warunki – bez ukrytych opłat\n✅ Dostosowanie zakresu do Twoich potrzeb\n\nJesteśmy pewni jakości naszych usług, dlatego dajemy Ci pełną swobodę!'
+    response: '📄 Nasze umowy są przyjazne i elastyczne:\n\n✅ Miesięczny okres wypowiedzenia\n✅ Możliwość rezygnacji bez dodatkowych kosztów\n✅ Transparentne warunki - bez ukrytych opłat\n✅ Dostosowanie zakresu do Twoich potrzeb\n\nJesteśmy pewni jakości naszych usług, dlatego dajemy Ci pełną swobodę!'
   },
 
   // === BRANŻE ===
@@ -123,7 +123,7 @@ const botKnowledge: { keywords: string[]; response: string }[] = [
   // === DZIĘKUJĘ ===
   {
     keywords: ['dziękuję', 'dzięki', 'thx', 'super', 'okej', 'ok', 'dzięki wielkie', 'dziękuje', 'dzieki', 'wielkie dzięki', 'dziękuję bardzo'],
-    response: '❤️ To dla mnie przyjemność! Jeśli masz jeszcze jakieś pytania, śmiało pytaj – jestem tu po to, aby pomóc! 😊\n\nA może chcesz przejść do konkretów? Kliknij "Porozmawiajmy" na stronie i umów się na konsultację!'
+    response: '❤️ To dla mnie przyjemność! Jeśli masz jeszcze jakieś pytania, śmiało pytaj - jestem tu po to, aby pomóc! 😊\n\nA może chcesz przejść do konkretów? Kliknij "Porozmawiajmy" na stronie i umów się na konsultację!'
   },
 
   // === POŻEGNANIA ===
@@ -141,7 +141,7 @@ const botKnowledge: { keywords: string[]; response: string }[] = [
   // === NIE WIEM ===
   {
     keywords: ['nie wiem', 'nie mam pojęcia', 'zgubiony', 'nowy', 'początek', 'od czego zacząć', 'pierwszy raz'],
-    response: '🤗 Spokojnie, każdy kiedyś zaczynał! Nie martw się, pomożemy Ci krok po kroku:\n\n1️⃣ Porozmawiajmy o Twoich celach\n2️⃣ Przeanalizujemy Twoją sytuację\n3️⃣ Zaproponujemy pierwsze działania\n\nWypełnij formularz na stronie lub skontaktuj się z nami – zaczniemy od podstaw! 📅'
+    response: '🤗 Spokojnie, każdy kiedyś zaczynał! Nie martw się, pomożemy Ci krok po kroku:\n\n1️⃣ Porozmawiajmy o Twoich celach\n2️⃣ Przeanalizujemy Twoją sytuację\n3️⃣ Zaproponujemy pierwsze działania\n\nWypełnij formularz na stronie lub skontaktuj się z nami - zaczniemy od podstaw! 📅'
   },
 
   // === CHCĘ WIEDZIEĆ WIĘCEJ ===
@@ -173,7 +173,7 @@ export default function ChatBot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: '👋 Cześć! Jestem MKT Bot – Twoim asystentem marketingowym. Jak mogę Ci pomóc? Wybierz jedną z opcji poniżej lub napisz własne pytanie! 😊',
+      text: '👋 Cześć! Jestem MKT Bot - Twoim asystentem marketingowym. Jak mogę Ci pomóc? Wybierz jedną z opcji poniżej lub napisz własne pytanie! 😊',
       isBot: true,
     },
   ]);

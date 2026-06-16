@@ -35,7 +35,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
             className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[100]"
           />
 
-          {/* Modal – wyśrodkowany, z animacją od dołu */}
+          {/* Modal - wyśrodkowany, z animacją od dołu */}
           <motion.div
             initial={{
               opacity: 0,

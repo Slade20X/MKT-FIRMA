@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import Lenis from 'lenis';
 import Navbar from './Navbar';
 import CookieConsent from './CookieConsent';
+import ChatBot from './ChatBot';
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   useEffect(() => {
@@ -33,6 +34,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
       <Navbar />
       <main>{children}</main>
       <CookieConsent />
+      <ChatBot />
     </>
   );
 }

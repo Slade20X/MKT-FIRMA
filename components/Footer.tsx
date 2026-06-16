@@ -62,7 +62,7 @@ export default function Footer() {
               <li><a href="#services" className="text-darkLight/60 hover:text-accent transition-colors">Usługi</a></li>
               <li><a href="#why-us" className="text-darkLight/60 hover:text-accent transition-colors">O nas</a></li>
               <li><a href="#process" className="text-darkLight/60 hover:text-accent transition-colors">Proces</a></li>
-              <li><a href="#contact" className="text-darkLight/60 hover:text-accent transition-colors">Cennik</a></li>
+              <li><a href="#kalkulator" className="text-darkLight/60 hover:text-accent transition-colors">Kalkulator</a></li>
               <li><a href="#contact" className="text-darkLight/60 hover:text-accent transition-colors">Kontakt</a></li>
             </ul>
           </div>

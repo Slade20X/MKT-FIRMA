@@ -54,7 +54,7 @@ export default function CTA() {
 
               {/* Dodatkowa informacja */}
               <p className="text-white/50 text-sm mt-6">
-                Odpowiadamy w ciągu 24h • Znajdziesz nas też na Instagramie i LinkedIn
+                Odpowiadamy w ciągu 24h
               </p>
             </div>
           </div>

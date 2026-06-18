@@ -60,9 +60,10 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><a href="#home" className="text-darkLight/60 hover:text-accent transition-colors">Home</a></li>
               <li><a href="#services" className="text-darkLight/60 hover:text-accent transition-colors">Usługi</a></li>
-              <li><a href="#why-us" className="text-darkLight/60 hover:text-accent transition-colors">O nas</a></li>
+              <li><a href="#team" className="text-darkLight/60 hover:text-accent transition-colors">O nas</a></li>
               <li><a href="#process" className="text-darkLight/60 hover:text-accent transition-colors">Proces</a></li>
               <li><a href="#kalkulator" className="text-darkLight/60 hover:text-accent transition-colors">Kalkulator</a></li>
+              <li><a href="#faq" className="text-darkLight/60 hover:text-accent transition-colors">FAQ</a></li>
               <li><a href="#contact" className="text-darkLight/60 hover:text-accent transition-colors">Kontakt</a></li>
             </ul>
           </div>

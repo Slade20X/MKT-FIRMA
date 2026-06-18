@@ -51,20 +51,6 @@ export default function Hero() {
         { scale: 1, opacity: 1, rotationY: 0, rotationX: 0, duration: 1.2, ease: 'power4.out' }, 
         '-=0.8'
       );
-
-      ScrollTrigger.create({
-        trigger: heroRef.current,
-        start: 'top top',
-        end: 'bottom top',
-        scrub: 1,
-        animation: gsap.to(imageRef.current, {
-          rotationY: 25,
-          rotationX: 12,
-          y: 80,
-          scale: 0.95,
-          ease: 'none',
-        }),
-      });
     }, heroRef);
 
     return () => ctx.revert();
@@ -131,15 +117,15 @@ export default function Hero() {
                    transform: 'rotateY(-16deg) rotateX(8deg)',
                    transformStyle: 'preserve-3d',
                  }}>
-              <Image
-                src="https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?q=80&w=1173&auto=format&fit=crop"
-                alt="Premium marketing dashboard"
-                fill
-                className="object-cover"
-                priority
-                fetchPriority="high"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
+                  <Image
+                  src="/dashboardv1.png"
+                  alt="MKT Lab - dashboard"
+                  fill
+                  className="object-cover"
+                  priority
+                  fetchPriority="high"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               <div className="absolute inset-0 bg-gradient-to-tr from-accent/5 to-transparent" />
             </div>
             <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-accent/5 rounded-full blur-3xl" />

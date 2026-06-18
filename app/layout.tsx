@@ -244,6 +244,7 @@ export default function RootLayout({
         <link rel="preload" href="/logo.png" as="image" type="image/png" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" type="image/png" />
+        <link rel="preload" href="/_next/static/css/XXXXX.css" as="style"fetchPriority="high" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <meta name="theme-color" content="#0F172A" />
         <meta name="format-detection" content="telephone=no" />

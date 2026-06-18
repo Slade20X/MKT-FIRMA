@@ -56,7 +56,7 @@ export default function Footer() {
 
           {/* Kolumna 2 - Firma */}
           <div>
-            <h4 className="font-bold text-dark mb-4">Firma</h4>
+            <h3 className="font-bold text-dark mb-4">Firma</h3>
             <ul className="space-y-2">
               <li><a href="#home" className="text-darkLight/60 hover:text-accent transition-colors">Home</a></li>
               <li><a href="#services" className="text-darkLight/60 hover:text-accent transition-colors">Usługi</a></li>
@@ -70,7 +70,7 @@ export default function Footer() {
 
           {/* Kolumna 3 - Usługi */}
           <div>
-            <h4 className="font-bold text-dark mb-4">Usługi</h4>
+            <h3 className="font-bold text-dark mb-4">Usługi</h3>
             <ul className="space-y-2">
               <li><a href="#services" className="text-darkLight/60 hover:text-accent transition-colors">Performance Marketing</a></li>
               <li><a href="#services" className="text-darkLight/60 hover:text-accent transition-colors">SEO</a></li>
@@ -81,7 +81,7 @@ export default function Footer() {
 
           {/* Kolumna 4 - Kontakt */}
           <div>
-            <h4 className="font-bold text-dark mb-4">Kontakt</h4>
+            <h3 className="font-bold text-dark mb-4">Kontakt</h3>
             <ul className="space-y-2">
               <li className="text-darkLight/60">mktlab.biuro@gmail.com</li>
               <li className="text-darkLight/60">+48 883 758 310</li>

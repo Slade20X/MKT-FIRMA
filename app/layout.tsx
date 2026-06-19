@@ -68,13 +68,21 @@ export default function RootLayout({
     description: 'Agencja marketingu i wzrostu. Działamy w Gdańsku i zdalnie na terenie całej Polski.',
     url: 'https://mktlab.pl',
     logo: 'https://mktlab.pl/favicon.ico',
+    image: 'https://mktlab.pl/og-image.png',
     email: 'mktlab.biuro@gmail.com',
     telephone: '+48 883 758 310',
     address: {
       '@type': 'PostalAddress',
+      streetAddress: 'ul. Myśliwska 101',
       addressLocality: 'Gdańsk',
       addressRegion: 'Pomorskie',
+      postalCode: '80-283',
       addressCountry: 'PL',
+    },
+        geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 54.3520,
+      longitude: 18.6466,
     },
     areaServed: ['Polska', 'Trójmiasto', 'Gdańsk', 'Sopot', 'Gdynia'],
     knowsLanguage: ['polski', 'angielski'],
@@ -231,10 +239,40 @@ export default function RootLayout({
     }
   };
 
+
+
+  // ============================================================
+// SCHEMAT 5: Organization (DODATKOWY SCHEMAT)
+// ============================================================
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'MKT Lab',
+  description: 'Agencja marketingu i wzrostu. Działamy w Gdańsku i zdalnie na terenie całej Polski.',
+  url: 'https://mktlab.pl',
+  logo: 'https://mktlab.pl/logo.png',
+  image: 'https://mktlab.pl/og-image.png',
+  email: 'mktlab.biuro@gmail.com',
+  telephone: '+48 883 758 310',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'ul. Myśliwska 101',
+    addressLocality: 'Gdańsk',
+    addressRegion: 'Pomorskie',
+    postalCode: '80-283',
+    addressCountry: 'PL',
+  },
+  sameAs: [
+    'https://www.facebook.com/mktlab',
+    'https://www.linkedin.com/company/mktlab',
+    'https://www.instagram.com/mktlab',
+  ],
+};
+
   // ============================================================
   // POŁĄCZONE WSZYSTKIE SCHEMATY
   // ============================================================
-  const allSchemas = [localBusinessSchema, faqSchema, breadcrumbSchema, websiteSchema];
+  const allSchemas = [localBusinessSchema, organizationSchema, faqSchema, breadcrumbSchema, websiteSchema];
 
   return (
     <html lang="pl">

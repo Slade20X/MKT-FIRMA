@@ -22,8 +22,7 @@ export default function Footer() {
             <span className="text-2xl font-bold tracking-tighter text-dark">MKT LAB</span>        
             <ul className="space-y-2">
               <li className="text-darkLight/60"></li>
-              <li className="text-darkLight/60">NIP:</li>
-              <li className="text-darkLight/60 text-sm">REGON:</li>
+              <li className="text-darkLight/60">NIP: 9571203913</li>
             </ul>
             
             {/* Social Media - Facebook i Instagram z opisem */}

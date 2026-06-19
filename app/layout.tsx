@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: 'MKT Lab',
     images: [
       {
-        url: 'https://i.imgur.com/3p3FcG4.png',
+        url: 'https://mktlab.pl/og-image.png',
         width: 1200,
         height: 630,
         alt: 'MKT Lab - nowoczesna agencja marketingowa',
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'MKT Lab - Agencja Marketingowa, Strony WWW, Kampanie reklamowe',
     description: 'Zwiększamy sprzedaż dzięki strategii, kreatywności i danym.',
-    images: ['https://i.imgur.com/3p3FcG4.png'],
+    images: ['https://mktlab.pl/og-image.png'],
   },
   verification: {
     google: 'tu-wpisz-kod-google-search-console',

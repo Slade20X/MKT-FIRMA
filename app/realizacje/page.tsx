@@ -1,3 +1,27 @@
+// app/realizacje/page.tsx
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Realizacje - MKT Lab | Case Studies i projekty',
+  description: 'Poznaj nasze realizacje. Zobacz, jak pomogliśmy firmom zwiększyć sprzedaż, ROAS i rozpoznawalność. Case studies z e-commerce i B2B.',
+  alternates: {
+    canonical: 'https://mktlab.pl/realizacje',
+  },
+  openGraph: {
+    title: 'Realizacje - MKT Lab | Case Studies',
+    description: 'Poznaj nasze realizacje i zobacz, jak pomagamy firmom osiągać wyniki.',
+    url: 'https://mktlab.pl/realizacje',
+    images: [
+      {
+        url: 'https://mktlab.pl/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'MKT Lab - realizacje',
+      },
+    ],
+  },
+};
+
 'use client';
 
 import { useRef, useEffect } from 'react';

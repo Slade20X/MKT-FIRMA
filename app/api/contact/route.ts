@@ -109,8 +109,8 @@ export async function POST(request: NextRequest) {
                   <p>Dziękujemy za wiadomość. Odpowiemy na nią <strong>w ciągu 24h</strong>.</p>
                   <p>W międzyczasie zapraszamy do odwiedzenia naszych social mediów:</p>
                   <p>
-                    <a href="https://facebook.com/mktlab">Facebook</a> | 
-                    <a href="https://instagram.com/mktlab">Instagram</a>
+                    <a href="https://www.facebook.com/profile.php?id=61590845034777">Facebook</a> | 
+                    <a href="https://www.facebook.com/profile.php?id=61590845034777">Instagram</a>
                   </p>
                   <br>
                   <p>Pozdrawiamy,<br><strong>Zespół MKT Lab</strong></p>

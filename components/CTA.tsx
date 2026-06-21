@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import MagneticButton from './ui/MagneticButton';
 import { ArrowRight, Facebook } from 'lucide-react';
-import ContactModal from './ContactModal';
 import Link from 'next/link';
 
 export default function CTA() {

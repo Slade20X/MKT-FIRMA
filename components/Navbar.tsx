@@ -12,7 +12,7 @@ const navLinks = [
   { name: 'O nas', href: '#team' },
   { name: 'Realizacje', href: '/realizacje' },
   { name: 'Kalkulator', href: '#kalkulator' },
-  { name: 'Kontakt', href: '#contact' },
+  { name: 'Kontakt', href: '/kontakt' },
 ];
 
 export default function Navbar() {

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import MagneticButton from './ui/MagneticButton';
 import { ArrowRight, Facebook } from 'lucide-react';
 import ContactModal from './ContactModal';
+import Link from 'next/link';
 
 export default function CTA() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -30,15 +31,14 @@ export default function CTA() {
               
               {/* Przyciski w jednym rzędzie */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <MagneticButton>
-                  <button
-                    onClick={openModal}
-                    className="group bg-white text-accent px-8 py-4 rounded-full text-lg font-semibold flex items-center gap-2 transition-all duration-300 hover:shadow-xl hover:scale-105"
-                  >
-                    Porozmawiajmy
-                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </button>
-                </MagneticButton>
+          <Link href="/kontakt">
+            <MagneticButton>
+              <button className="group bg-white text-accent px-8 py-4 rounded-full text-lg font-semibold flex items-center gap-2 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                Porozmawiajmy
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </MagneticButton>
+          </Link>
 
                 {/* Przycisk Facebook */}
                 <a
@@ -61,7 +61,7 @@ export default function CTA() {
         </div>
       </section>
 
-      <ContactModal isOpen={isModalOpen} onClose={closeModal} />
+  
     </>
   );
 }

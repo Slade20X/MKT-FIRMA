@@ -81,7 +81,7 @@ export default function GoogleReviews() {
           className="text-center mt-8"
         >
           <a
-            href="https://g.page/mktlab"
+            href="https://g.page/r/CZA9ORHiy2LhEBM/review"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-accent hover:underline transition-colors text-sm"

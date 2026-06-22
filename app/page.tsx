@@ -4,7 +4,7 @@ import Services from '@/components/Services';
 import Results from '@/components/Results';
 // import CaseStudies from '@/components/CaseStudies'; //
 import WhyUs from '@/components/WhyUs';
-import Testimonials from '@/components/Testimonials';
+import GoogleReviews from '@/components/GoogleReviews';
 import Process from '@/components/Process';
 import ROICalculator from '@/components/ROICalculator';
 import FAQ from '@/components/FAQ';
@@ -20,7 +20,7 @@ export default function Home() {
       <Results />
       {/* <CaseStudies /> */}
       <WhyUs />
-      <Testimonials />
+      <GoogleReviews />
       <Process />
       <ROICalculator />
        <FAQ />

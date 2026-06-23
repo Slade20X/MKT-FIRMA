@@ -121,10 +121,6 @@ export default function RealizacjePage() {
           <h1 className="page-title text-3xl md:text-5xl font-bold mt-3 text-dark">
             Projekty, które <span className="text-accent">napędzają wzrost</span>
           </h1>
-          <p className="mt-4 text-darkLight/70 text-lg max-w-2xl">
-            Poznaj nasze najnowsze realizacje – przekonaj się, jak pomagamy firmom osiągać 
-            wymierne rezultaty.
-          </p>
         </motion.div>
 
         {/* Lista realizacji */}
@@ -197,7 +193,7 @@ export default function RealizacjePage() {
                 {/* Przycisk do kontaktu */}
                 <Link 
                   href="/#contact" 
-                  className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 rounded-full font-medium hover:bg-accent/90 transition-all duration-300 hover:shadow-lg hover:scale-105 mt-4"
+                  className="inline-flex items-center gap-2 bg-accent text-white px-6 py-3 rounded-md font-medium hover:bg-accent/90 transition-all duration-300 hover:shadow-lg hover:scale-105 mt-4"
                 >
                   Podobny projekt? Porozmawiajmy
                   <ArrowRight className="w-4 h-4" />
@@ -254,7 +250,7 @@ export default function RealizacjePage() {
           </p>
           <Link 
             href="/#contact" 
-            className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-full font-semibold hover:bg-accent/90 transition-all duration-300 hover:shadow-xl hover:scale-105"
+            className="inline-flex items-center gap-2 bg-accent text-white px-8 py-4 rounded-md font-semibold hover:bg-accent/90 transition-all duration-300 hover:shadow-xl hover:scale-105"
           >
             Porozmawiajmy o Twoim projekcie
             <ArrowRight className="w-5 h-5" />

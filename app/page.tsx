@@ -20,10 +20,10 @@ export default function Home() {
       <Results />
       {/* <CaseStudies /> */}
       <WhyUs />
-      <GoogleReviews />
       <Process />
       <ROICalculator />
        <FAQ />
+       <GoogleReviews />
       <CTA />
       <Footer />
     </>

@@ -60,7 +60,7 @@ export default function Footer() {
               <li><a href="#home" className="text-darkLight/60 hover:text-accent transition-colors">Home</a></li>
               <li><a href="#services" className="text-darkLight/60 hover:text-accent transition-colors">Usługi</a></li>
               <li><a href="#team" className="text-darkLight/60 hover:text-accent transition-colors">O nas</a></li>
-              <li><a href="#process" className="text-darkLight/60 hover:text-accent transition-colors">Proces</a></li>
+              <li><a href="/realizacje" className="text-darkLight/60 hover:text-accent transition-colors">Realizacje</a></li>
               <li><a href="#kalkulator" className="text-darkLight/60 hover:text-accent transition-colors">Kalkulator</a></li>
               <li><a href="#faq" className="text-darkLight/60 hover:text-accent transition-colors">FAQ</a></li>
               <li><a href="#contact" className="text-darkLight/60 hover:text-accent transition-colors">Kontakt</a></li>
@@ -78,12 +78,26 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Kolumna 4 - Kontakt */}
+          {/* Kolumna 4 - Kontakt - POPRAWIONE */}
           <div>
             <h3 className="font-bold text-dark mb-4">Kontakt</h3>
             <ul className="space-y-2">
-              <li className="text-darkLight/60">mktlab.biuro@gmail.com</li>
-              <li className="text-darkLight/60">+48 883 758 310</li>
+              <li>
+                <a 
+                  href="mailto:mktlab.biuro@gmail.com" 
+                  className="text-darkLight/60 hover:text-accent transition-colors"
+                >
+                  mktlab.biuro@gmail.com
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="tel:+48883758310" 
+                  className="text-darkLight/60 hover:text-accent transition-colors"
+                >
+                  +48 883 758 310
+                </a>
+              </li>
               <li className="text-darkLight/60">Gdańsk, Polska</li>
             </ul>
           </div>

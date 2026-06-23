@@ -71,7 +71,7 @@ export default function Navbar() {
             <MagneticButton>
               <button
                 onClick={scrollToContact}
-                className="bg-dark text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-accent transition"
+                className="bg-dark text-white px-6 py-2.5 rounded-md text-sm font-medium hover:bg-accent transition"
               >
                 Umów konsultację
               </button>

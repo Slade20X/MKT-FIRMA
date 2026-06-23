@@ -236,7 +236,7 @@ export default function ROICalculator() {
                 <span className="text-darkLight/60">Inwestycja</span>
                 <span className="text-darkLight/60">Przychód</span>
               </div>
-              <div className="relative h-6 bg-secondary rounded-full overflow-hidden">
+              <div className="relative h-6 bg-secondary rounded-md overflow-hidden">
                 <motion.div
                   initial={{ width: 0 }}
                   animate={{ 
@@ -267,7 +267,7 @@ export default function ROICalculator() {
                 const el = document.getElementById('contact');
                 if (el) el.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="w-full bg-accent text-white py-4 rounded-full font-semibold hover:bg-accent/90 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+              className="w-full bg-accent text-white py-4 rounded-md font-semibold hover:bg-accent/90 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
             >
               Porozmawiajmy o Twoim przypadku
               <ArrowRight className="w-5 h-5" />

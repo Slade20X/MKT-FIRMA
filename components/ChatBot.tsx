@@ -342,7 +342,7 @@ export default function ChatBot() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
             transition={{ type: 'spring', damping: 25 }}
-            className="fixed bottom-28 right-4 md:bottom-32 md:right-6 z-[60] max-w-[280px] md:max-w-sm bg-white rounded-2xl shadow-2xl p-4 border border-tertiary cursor-pointer hover:shadow-xl transition-shadow"
+            className="fixed bottom-28 right-4 md:bottom-32 md:right-6 z-[60] max-w-[280px] md:max-w-sm bg-white rounded-2xl shadow-2xl p-4 border border-tertiary cursor-pointer hover:shadow-xl transition-shadow hidden lg:block"
             onClick={toggleChat}
           >
             <div className="flex items-start gap-3">

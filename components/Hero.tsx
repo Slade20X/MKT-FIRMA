@@ -87,7 +87,7 @@ export default function Hero() {
               <MagneticButton>
                 <button
                   onClick={scrollToContact}
-                  className="group bg-dark text-white px-8 py-3 rounded-full text-base font-medium flex items-center gap-2 transition-all duration-300 hover:bg-accent"
+                  className="group bg-dark text-white px-8 py-3 rounded-md text-base font-medium flex items-center gap-2 transition-all duration-300 hover:bg-accent"
                   aria-label="Umów bezpłatną konsultację"
                 >
                   Umów rozmowę
@@ -96,7 +96,7 @@ export default function Hero() {
               </MagneticButton>
             <MagneticButton>
               <Link href="/realizacje">
-                <button className="group bg-tertiary text-dark px-8 py-3 rounded-full text-base font-medium flex items-center gap-2 transition-all duration-300 hover:bg-secondary">
+                <button className="group bg-tertiary text-dark px-8 py-3 rounded-md text-base font-medium flex items-center gap-2 transition-all duration-300 hover:bg-secondary">
                   Zobacz realizacje
                   <Play className="w-4 h-4" />
                 </button>

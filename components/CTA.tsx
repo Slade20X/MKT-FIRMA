@@ -18,7 +18,7 @@ export default function CTA() {
     <>
       <section id="contact" className="py-24 md:py-32 bg-white">
         <div className="container-premium">
-          <div className="bg-accent rounded-4xl p-12 md:p-20 text-center relative overflow-hidden">
+          <div className="bg-accent rounded-3xl p-12 md:p-20 text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-radial from-white/5 to-transparent" />
             <div className="relative z-10">
               <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
@@ -32,7 +32,7 @@ export default function CTA() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link href="/kontakt">
             <MagneticButton>
-              <button className="group bg-white text-accent px-8 py-4 rounded-full text-lg font-semibold flex items-center gap-2 transition-all duration-300 hover:shadow-xl hover:scale-105">
+              <button className="group bg-white text-accent px-8 py-4 rounded-md text-lg font-semibold flex items-center gap-2 transition-all duration-300 hover:shadow-xl hover:scale-105">
                 Porozmawiajmy
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
@@ -44,7 +44,7 @@ export default function CTA() {
                   href={facebookUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-3 bg-[#1877F2] text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:scale-105 hover:bg-[#1877F2]/90"
+                  className="inline-flex items-center justify-center gap-3 bg-[#1877F2] text-white px-8 py-4 rounded-md text-lg font-semibold transition-all duration-300 hover:shadow-xl hover:scale-105 hover:bg-[#1877F2]/90"
                 >
                   <Facebook className="w-5 h-5" />
                   Obserwuj nas na Facebooku
